@@ -1,0 +1,221 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Gym Landing Page</title> 
+    <style> 
+        * { 
+            margin: 0; 
+            padding: 0; 
+            box-sizing: border-box; 
+        } 
+        body { 
+            font-family: Arial, sans-serif; 
+        } 
+        section { 
+            margin-bottom: 0; 
+        } 
+        nav { 
+            background-color: rgb(174, 7, 7); 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            padding: 10px; 
+        } 
+        a { 
+            text-decoration: none; 
+            color: white; 
+            margin: 0 10px; 
+            padding: 10px; 
+        } 
+        .image { 
+            position: relative; 
+            height: 600px; 
+            width: 100%; 
+            opacity: 3; 
+        } 
+        #fp { 
+            position: absolute; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-100%, -50%); 
+            z-index: 1; 
+            color: blanchedalmond; 
+            padding: 40px 50px; 
+            text-align: justify; 
+            font-size: 20px; 
+            background-color: rgba(0, 0, 0, 0.5); 
+            max-width: 600px; 
+        } 
+        #fs { 
+            color: antiquewhite; 
+            font-size: 50px; 
+            font-family: "Gabarito variant0", Tofu; 
+            margin-bottom: 10px; 
+            animation: glow 2s infinite;
+           
+          
+        } 
+        @keyframes glow {
+  0% {
+    text-shadow: 0 0 5px white;
+  }
+  50% {
+    text-shadow: 0 0 20px white;
+  }
+  100% {
+    text-shadow: 0 0 5px white;
+  }
+}
+        .mid { 
+            display: flex; 
+            justify-content: space-between; 
+            background-color: black; 
+            height: 200px; 
+            margin-top: 0px; 
+        } 
+        .box { 
+            flex: 1; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            box-shadow: 0 0 10px rgba(236, 9, 9, 0.3); /* Added box shadow */ 
+        } 
+        .box img { 
+            height: 150px; 
+            width: 400px; 
+            object-fit: cover; 
+        } 
+        .ban { 
+            background-color: black; 
+        } 
+        .banimg { 
+            height: 50px; 
+            width: 40px; 
+            border-radius: 100px; 
+            position: absolute; 
+            float: right; 
+            left: 20%; 
+            top: 1.1%; 
+        } 
+        #ag{ 
+            color: rgb(229, 235, 198); 
+            text-align: justify; 
+            padding-left: 10px;
+            word-spacing: 0.3em; 
+        } 
+        .article{ 
+            padding-top: 20px; 
+            background-color: black; 
+            padding: 10px 10px 30px 10px; 
+            text-align: justify;
+        } 
+        #ah{ 
+        text-decoration: underline; 
+        text-shadow: 5px; 
+        color: beige; 
+        font-family: "Gabarito variant0", Tofu; 
+        padding: 10px; 
+        } 
+        .ai{ 
+          
+            height: 192px; 
+            width:300px; 
+            float: right;
+            margin-left: 10px; 
+        } 
+        a:hover{
+            color:red;
+            background-color: black;
+        }
+        .button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.but {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  color: white;
+  background-color: red;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 0 5px yellow;
+  font-size: 16px;
+  cursor: pointer;
+}
+.but:hover {
+  background-color: black;
+}
+.contact{
+    background-color: rgba(0, 0, 0, 0.459);
+    padding-left: 20px;
+    padding: 15px;
+}
+.con{
+    font-weight: bold;
+}
+    </style> 
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet"> 
+</head> 
+<body> 
+    <header class="header"> 
+        <div class="ban"> 
+            <img src="https://images.pexels.com/photos/11385975/pexels-photo-11385975.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" class="banimg"> 
+            <span id="fs">Nayan fitness</span> 
+        </div> 
+        <nav> 
+            <a href="#c1">Contact</a> 
+            <a href="#ah">About Us</a> 
+            <a href="#">Program</a> 
+            <a href="#fs">Work</a> 
+            <a href="#c1">Contact Us</a> 
+        </nav> 
+       
+        
+    </header> 
+    <section> 
+        <img src="https://images.pexels.com/photos/2827400/pexels-photo-2827400.jpeg?auto=compress&cs=tinysrgb&w=600" alt="bodybuilderimage" class="image"> 
+        <div id="fp"> 
+            <h1 id="fs">SHAPE YOUR BODY</h1> 
+            <p> 
+                Welcome to our gym! We are dedicated to helping you achieve your fitness goals and transform your body. Our state-of-the-art facilities provide a wide range of equipment and classes to suit all fitness levels. Whether you're a beginner looking to kickstart your fitness journey or an experienced athlete aiming to reach new heights, our expert trainers are here to guide and motivate you every step of the way. Join our supportive community and discover the power of a healthy lifestyle. Start your fitness journey with us today! 
+            </p> 
+        </div> 
+    </section> 
+    <div class="mid"> 
+        <div class="box"><img src="https://tse1.mm.bing.net/th?id=OIP.iTfjt23FAFH72RP7RA3hyAHaE7&pid=Api&rs=1&c=1&qlt=95&w=155&h=103" alt=""></div> 
+        <div class="box"><img src="https://tse1.mm.bing.net/th?id=OIP.lu9sLMjAPyR-MdrdxGvQqQHaE8&pid=Api&rs=1&c=1&qlt=95&w=154&h=103" alt=""></div> 
+        <div class="box"><img src="https://tse3.mm.bing.net/th?id=OIP.RKu-VH1hKpEmBz8tge8KuAHaE8&pid=Api&P=0&h=180" alt=""></div> 
+        <div class="box"><img src="https://tse1.mm.bing.net/th?id=OIP.7xnPoY15cV85XZYYDaMsMwHaE7&pid=Api&rs=1&c=1&qlt=95&w=155&h=103" alt=""></div> 
+    </div> 
+    <div class="article"> 
+        <h1 id="ah">About us</h1> 
+        <img src="https://images.pexels.com/photos/13106632/pexels-photo-13106632.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" class="ai"> 
+        <span id="ag">Our gym offers a top-notch fitness experience with a well-facilitated environment. Equipped with state-of-the-art equipment, we provide everything you need to achieve your fitness goals. Our wide range of machines, weights, and cardio equipment ensures that you can enjoy a diverse and effective workout.  
+            In addition to our top-quality equipment, we have a team of skilled and dedicated personal trainers who are here to guide and motivate you throughout your fitness journey. Our trainers will tailor personalized workout plans to suit your individual needs and help you maximize your results. 
+            At our gym, we prioritize your comfort and convenience. Our facility is fully air-conditioned, providing a comfortable and refreshing atmosphere for your workouts. We believe that a pleasant environment enhances your fitness experience and makes it more enjoyable. 
+            Whether you're a beginner or an experienced fitness enthusiast, our gym is suitable for all levels of fitness. We foster a welcoming and supportive community where everyone feels encouraged and motivated to achieve their fitness goals.  
+            Join our gym today and experience the difference of a well-equipped facility, expert trainers, and a comfortable, air-conditioned environment. Start your fitness journey with us and take the first step towards a healthier and stronger you. 
+            Please let me know if there's anything else I can assist you with!</span> <br>
+            <div class="button-container">
+                <button class="but">register</button>
+              </div>
+    </div> <center>
+    <div class="contact"><h1 id="c1">contact</h1>
+       <span class="con"> tele:xxx-xxx-xxxx</span><br>
+       <span class="con">gmail:nayanmogaveera9@gmail.com</span><br>
+       <span class="con">Linkedin id:Nayan mogaveera</span>
+       <br>
+       <br>
+    </center>
+
+    </div>
+</body> 
+</html> 
